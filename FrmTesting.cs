@@ -57,6 +57,13 @@ namespace OverloadToString
             int ave = (int)s5;
             LbxOutput.Items.Add(ave.RJ(13));
             LbxOutput.TopIndex = LbxOutput.Items.Count - 1;
+
+            LbxOutput.Items.Add("");
+            ListBoxPrint p = new ListBoxPrint(LbxOutput);
+            p.Print(s5.ToString());
+            p.Print(ave);
+
+
         }
     }
 
